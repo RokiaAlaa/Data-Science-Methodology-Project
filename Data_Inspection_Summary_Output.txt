@@ -1,0 +1,188 @@
+C:\Users\LONOVO\IdeaProjects\untitled5\.venv\Scripts\python.exe C:\Users\LONOVO\IdeaProjects\untitled5\.idea\project111.py 
+====================================
+      DATA INSPECTION REPORT
+====================================
+
+✔ Dataset loaded successfully.
+
+====================================
+1. BASIC INFORMATION
+====================================
+Rows: 1200
+Columns: 11
+
+Column Names:
+['name', 'brand', 'price', 'old_price', 'discount_percent', 'rating', 'num_reviews', 'link', 'category', 'image_url', 'badge']
+
+
+====================================
+2. DATA TYPES
+====================================
+name                 object
+brand                object
+price                object
+old_price            object
+discount_percent    float64
+rating               object
+num_reviews          object
+link                 object
+category             object
+image_url            object
+badge               float64
+dtype: object
+
+
+====================================
+3. MISSING VALUES PER COLUMN
+====================================
+name                   0
+brand                  0
+price                  0
+old_price            293
+discount_percent    1200
+rating               885
+num_reviews          885
+link                  78
+category               0
+image_url              0
+badge               1200
+dtype: int64
+
+
+====================================
+4. DUPLICATES CHECK
+====================================
+Number of duplicate rows: 1
+
+====================================
+5. SAMPLE STATISTICS
+====================================
+
+Top 10 brands:
+brand
+Samsung     233
+Honor       136
+XIAOMI      113
+realme      109
+Vivo        107
+OPPO        105
+Infinix      89
+Apple        38
+Itel         33
+Motorola     23
+Name: count, dtype: int64
+
+Top 10 product names:
+name
+Samsung Galaxy A26 Dual SIM 5G 256GB/8GB Mobile Phone - Black            5
+Mini Air Conditioners - Portable Air Cooler and USB Charging             5
+Samsung Galaxy A36 Dual SIM 5G 256GB/8GB Mobile Phone - Awesome Black    4
+Samsung Galaxy A36 Dual SIM 5G 256GB/8GB Mobile Phone - Awesome White    4
+O Accessories Chain Mobile Phone Strap Of Colored Beads                  4
+Samsung Galaxy A26 Dual SIM 5G 256GB/8GB Mobile Phone- White             3
+Samsung Galaxy A26 Dual SIM 5G 256GB/8GB Mobile Phone- Black             3
+Samsung Galaxy M55 Dual SIM, 128GB, 8GB RAM, 5G - Black                  3
+Honor 400 Pro Dual SIM, 512GB, 12GB RAM, 5G - Midnight Black             3
+Honor X6c Dual SIM, 256GB, 6GB RAM, 4G LTE - Midnight Black              3
+Name: count, dtype: int64
+
+Unique Categories:
+['Mobile']
+
+Rating Formats (first 10):
+0       5 out of 5
+1     3.8 out of 5
+2     4.4 out of 5
+3     4.5 out of 5
+4       5 out of 5
+5     4.7 out of 5
+7       4 out of 5
+8       5 out of 5
+9     4.6 out of 5
+10    4.5 out of 5
+Name: rating, dtype: object
+
+Reviews Formats (first 10):
+0        5 out of 5(3)
+1      3.8 out of 5(8)
+2     4.4 out of 5(20)
+3      4.5 out of 5(2)
+4        5 out of 5(9)
+5     4.7 out of 5(24)
+7        4 out of 5(5)
+8        5 out of 5(2)
+9      4.6 out of 5(5)
+10    4.5 out of 5(17)
+Name: num_reviews, dtype: object
+
+Price Formats (first 10):
+0    EGP 18,699.00
+1    EGP 11,999.00
+2    EGP 15,699.00
+3     EGP 9,499.00
+4    EGP 22,999.00
+5     EGP 5,555.00
+6    EGP 14,990.00
+7    EGP 19,799.00
+8    EGP 11,666.00
+9    EGP 11,899.00
+Name: price, dtype: object
+
+====================================
+6. CHECK FOR BROKEN LINKS
+====================================
+Products with blocked/broken links: 1122
+
+Sample broken links:
+                                                name  ... badge
+0   OPPO Reno 14f Dual SIM 5G 256GB/12GB - Opal Blue  ...   NaN
+1  Honor 400 Lite Dual SIM 5G 256GB/8GB - Velvet ...  ...   NaN
+2  Samsung Galaxy A36 Dual SIM 5G 256GB/8GB Mobil...  ...   NaN
+3       OPPO A5 Dual SIM 4G 256GB/8GB - Aurora Green  ...   NaN
+4  Samsung Galaxy A56 – Mobile Phone – 12GB RAM –...  ...   NaN
+
+[5 rows x 11 columns]
+
+====================================
+✔ INSPECTION COMPLETE
+====================================
+
+====================================
+7. SUMMARY OF DATA INSPECTION
+====================================
+✔ Total rows: 1200
+✔ Total columns: 11
+
+✔ Missing values per column:
+   - name: 0
+   - brand: 0
+   - price: 0
+   - old_price: 293
+   - discount_percent: 1200
+   - rating: 885
+   - num_reviews: 885
+   - link: 78
+   - category: 0
+   - image_url: 0
+   - badge: 1200
+
+✔ Duplicate rows: 1
+✔ Broken / login-blocked product links: 1122
+
+⚠ Columns with 100% missing values:
+   - discount_percent
+   - badge
+
+⚠ Columns with >50% missing values:
+   - discount_percent
+   - rating
+   - num_reviews
+   - badge
+
+⚠ Non-mobile suspicious items found: 15
+
+====================================
+✔ INSPECTION SUMMARY COMPLETE
+====================================
+
+Process finished with exit code
